@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+	border-style: solid;
+	border-color: #000;
+	border-width: 0;
+}
+
+h1 {
+	padding-top: calc(100vmin / 6);
+}
+
+div {
+
+	display: none;
+	width: 100vmin;
+	height: 100vmin;
+	text-align: center;
+	height: calc(100vmin / 3);
+}
+
+.x { background: url('./x.svg'); }
+.o { background: url('./o.svg'); }
+.o, .x {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: calc(100vmin / 3);
+}
+
+li, svg {
+	list-style: none;
+	width: calc(100vmin / 3);
+	height: calc(100vmin / 3);
+}
+
+ul {
+	width: 100vmin;
+	height: 100vmin;
+	display: flex;
+	flex-wrap: wrap;
+	background-size: 100vmin;
+	background-image:
+		linear-gradient(to right,
+			transparent calc(100vmin / 3 - 1px),
+			black calc(100vmin / 3 - 1px) calc(100vmin / 3 + 1px),
+			transparent calc(100vmin / 3 + 1px) calc(200vmin / 3 - 1px),
+			black calc(200vmin / 3 - 1px) calc(200vmin / 3 + 1px),
+			transparent calc(200vmin / 3 + 1px)
+			),
+		linear-gradient(to bottom,
+			transparent calc(100vmin / 3 - 1px),
+			black calc(100vmin / 3 - 1px) calc(100vmin / 3 + 1px),
+			transparent calc(100vmin / 3 + 1px) calc(200vmin / 3 - 1px),
+			black calc(200vmin / 3 - 1px) calc(200vmin / 3 + 1px),
+			transparent calc(200vmin / 3 + 1px)
+			);
+}
